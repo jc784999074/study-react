@@ -229,7 +229,7 @@ var AppComponent = React.createClass( {
     }
   },
   //组件加载后，计算图片范围
-  componentDidMount:function (){
+  componentDidMount:function (){debugger;
     //舞台大小
     var stageDOM=this.refs.stage,
         stageW = stageDOM.scrollWidth,
@@ -289,7 +289,7 @@ var AppComponent = React.createClass( {
         }.bind(this));
     return (
       
-      <section className='stage' ref='stage'>
+      <section className='stage' ref='stage' style={{height:document.documentElement.clientHeight+'px'}}>
         <section className='img-sec'>
           {imgFigures}
         </section>
